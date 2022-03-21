@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            /* width: 60%; */
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            color: #cacaca;
+        }
+        #container{
+            height: 455px;
+            width: 70%;
+            margin: auto;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,350px);
+            gap: 25px;
+        }
+        #container>div{
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        #container>div>p{
+            color: #a6a7a8;
+            font-weight: bold;
+            padding: 20px 40px 10px 40px ;
+        }
+        #container>div>h1{
+           margin-bottom: 0px;
+           color: #25b386;
+           text-align: center;
+        }
+        #container>div>h3{
+            margin-top: 40px;
+        }
+        button{
+            height: 50px;
+            width: 150px;
+            border-radius: 5px;
+            color: #007aff;
+            font-weight: bold;
+            border: 2px solid #007aff;
+            background-color: white;
+        }
+        button:hover{
+            background-color: #007aff;
+            color: white;
+            cursor: pointer;
+        }
+        #box2>#p1{
+            color: #f2834a;
+        }
+        #box3>#p2{
+            color: #007aff;
+        }
+        @media only screen and (min-width: 70px) and (max-width: 420px) {
+            #container>div{
+                display: flex;
+                flex-direction: column;
+            }
+            #container{
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: auto;
+            }
+            p{
+                text-align: center;
+            }
+            #container>div>p{
+                padding: 10px;
+            }
+            button{
+                margin-left: 20px;
+                margin-bottom: 10px;
+            } 
+        }
+        @media only screen and (min-width: 421px) and (max-width: 780px) {
+            #container>div{
+                display: flex;
+                flex-direction: column;
+            }
+            #container{
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows:auto;
+            }
+            p{
+                text-align: center;
+            }
+            #container>div>p{
+                padding: 10px;
+            }
+            button{
+                margin-left: 30px;
+                margin-bottom: 15px;
+                /* margin-right: 30px; */
+            } 
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <h1>Choose a plan that right for your bussiness</h1>
+    <p>We collect reviews from our user so you can get an honest opinion of what an experience with our website are really like!</p>
+    <div id="container">
+        <div>
+            <h3>Starter Plan</h1>
+            <h1>Free</h1>
+            <i>Per month</i>
+            <p>We collect reviews from our user so you can get an honest opinion of what an experience with our website.</p>
+            <button>Start Now</button>
+        </div>
+        <div id="box2">
+            <h3>Business Plan</h1>
+            <h1 id="p1">$39.00</h1>
+            <i>Per month</i>
+            <p>We collect reviews from our user so you can get an honest opinion of what an experience with our website.</p>
+            <button>Start Now</button>
+        </div>
+        <div id="box3">
+            <h3>Premium Plan</h1>
+            <h1 id="p2">$59.00</h1>
+            <i>Per month</i>
+            <p>We collect reviews from our user so you can get an honest opinion of what an experience with our website.</p>
+            <button>Start Now</button>
+        </div>
+    </div>
+</body>
+</html>

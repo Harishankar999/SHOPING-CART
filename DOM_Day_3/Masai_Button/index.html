@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            margin: 5px;
+            height: 50px;
+            width: 120px;
+            border: 0px;
+            border-radius: 5px;
+            font-size: 19px;
+        }
+    </style>
+</head>
+<body></body>
+</html>
+<script>
+    var bottonObj= [
+        {textContennt: "Primary", color:"white",bgcolor:"#017afe"},
+        {textContennt: "Secondary",color:"white",bgcolor:"grey"},
+        {textContennt: "Success",color:"white",bgcolor:"#27a644"},
+        {textContennt: "Danger",color:"white",bgcolor:"#f74263"},
+        {textContennt: "Warning",color:"black",bgcolor:"#ffbf07"},
+        {textContennt: "Info",color:"white",bgcolor:"#12a1b7"},
+        {textContennt: "Light",color:"black",bgcolor:"white"},
+        {textContennt: "Dark",color:"white",bgcolor:"black"},
+        {textContennt: "Link",color:"#12a1b7",bgcolor:"white"}
+    ];
+    bottonObj.map(function (el){
+        var btn1=document.createElement("button");
+        btn1.textContent=el.textContennt;
+        btn1.style.backgroundColor=el.bgcolor;
+        btn1.style.color=el.color;
+        btn1.setAttribute("class","button")
+        document.querySelector("body").append(btn1);
+    });
+</script>

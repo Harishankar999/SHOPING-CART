@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container{
+        width: 60%;
+        height: 600px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,175px);
+        gap: 20px;
+      }
+      #container>div{
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      img{
+        height:175px;
+        width: 175px;
+      }
+      #container>div{
+        display: flex;
+      }
+      #container>div>div{
+        margin-left: 20px;
+      }
+      button{
+        background-color: #f74263;
+        border: 0;
+        padding: 10px 25px 10px 25px;
+        border-radius: 10px;
+        color: white;
+        margin-left: 14px;
+      }
+      h3 {
+        text-align: center;
+      }
+      h1{
+        text-align: center;
+        color: #f74263;
+      }
+
+      /* Medium screens */
+      @media only screen and (min-width: 421px) and (max-width: 780px) {
+        img{
+          border-radius: 50%;
+        }
+        #container>div{
+          display: flex;
+          flex-direction: column;
+        }
+        #container{
+          grid-template-columns: repeat(2,1fr);
+          grid-template-rows: auto;
+        }
+        #container>div{
+          padding: 20px;
+        }
+        p{
+          text-align: center;
+        }
+        h3{
+          text-align: centre;
+        }
+      }
+      
+      /* small screens */
+      @media only screen and (min-width: 70px) and (max-width: 420px) {
+        img{
+          border-radius: 50%;
+        }
+        #container>div{
+          display: flex;
+          flex-direction: column;
+        }
+        #container{
+          grid-template-columns: repeat(1,1fr);
+          grid-template-rows: auto;
+        }
+        #container>div{
+          padding: 20px;
+        }
+        p{
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- image link - 
+      https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/radhe-shyam-et00135230-07-03-2022-04-16-56.jpg -->
+    <h1>Just movies</h1>
+    <div id="container">
+      <div>
+          <img src="https://www.telugubulletin.com/wp-content/uploads/2022/03/ET-Movie-Review.jpg" alt="">
+          <div>
+            <h3>ET (2022)</h3>
+            <p>Releasing on 11 Mar,2022</p>
+            <button>Book Tickets</button>
+          </div>
+      </div>
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BY2E2NmNlOWUtNThjZi00YmNhLTlmNWEtYjQxYzlmZWQxZGU5XkEyXkFqcGdeQXVyOTA0NDk0NzM@._V1_.jpg" alt="">
+        <div>
+          <h3>Jhund</h3>
+          <p>Releasing on 11 Mar,2022</p>
+          <button>Book Tickets</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BN2M4NDM2NDItMzgzNy00OWRiLThhNjEtZDA2OWMyNTcwYzRjXkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_.jpg" alt="">
+        <div>
+          <h3>Gangubai Kathiawadi</h3>
+          <p>Releasing on 11 Mar,2022</p>
+          <button>Book Tickets</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BMzNhOTdlNmUtYzNiYi00MmUxLTg3ZjgtZjk4Y2Y5YTk3ODdiXkEyXkFqcGdeQXVyMTE2MjAzMTU3._V1_.jpg" alt="">
+        <div>
+          <h3>Radhe Shyam</h3>
+          <p>Releasing on 11 Mar,2022</p>
+            <button>Book Tickets</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d4/Uncharted_Official_Poster.jpg" alt="">
+        <div>
+          <h3>Uncharted</h3>
+          <p>Releasing on 11 Mar,2022</p>
+          <button>Book Tickets</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://assets-prd.ignimgs.com/2022/01/26/thebatman-newbutton-1643232430643.jpg" alt="">
+        <div>
+          <h3>The Batman</h3>
+          <p>Releasing on 11 Mar,2022</p>
+          <button>Book Tickets</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <select id = "continent_select">
+            <option value=""></option>
+            <option value ="The continent is Asia">India </option>
+            <optionm value="The continent is North and Central America">United States of America</optionm>
+            <option value="The continent is Asia">China</option>
+            <option value="The continent is Asia">Nepal</option>
+            <option value="The continent is Oceania">Australia</option>
+            <option value="The continent is Europe">France</option>
+            <option value="The continent is Europe">Germany</option>
+            <option value="The continent is Africa">South Africa</option>
+            <option value="The continent is Africa">Nigeria</option>
+            <option value="The continent is North and Central America">Mexico</option>
+            <option value="The continent is South America">Argentina</option>
+            <option value="The continent is South America">Brazil</option>
+            <option value="The continent is North and Central America">Canada</option>
+            <option value="The continent is Asia">Singapore</option>
+            <option value="The continent is Europe">Sweden</option>	
+        </select>
+        <input type="submit" id="">
+
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",myContinent);
+    function myContinent(){
+        event.preventDefault();
+        var continent = document.querySelector("#continent_select").value;
+        alert(continent);
+    }
+
+</script>

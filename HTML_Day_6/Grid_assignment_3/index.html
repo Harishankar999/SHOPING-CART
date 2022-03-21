@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #big{
+            display: grid;
+            grid-template-columns: repeat(4,150px);
+            grid-template-rows: repeat(3,100px);
+            grid-gap: 50px;
+            grid-template-areas: 
+            "a b b c"
+            "d d e f"
+            "g h i i";
+            padding: 300px;
+            padding-top: 50px;
+        }
+        #big>div{
+            background-color:#217867;
+            border-radius: 2px;
+        }
+        #big>div:nth-child(1){
+            grid-area: a;
+        }
+        #big>div:nth-child(2){
+            grid-area: b;
+        }
+        #big>div:nth-child(3){
+            grid-area: c;
+        }
+        #big>div:nth-child(4){
+            grid-area: d;
+        }
+        #big>div:nth-child(5){
+            grid-area: e;
+        }
+        #big>div:nth-child(6){
+            grid-area: f;
+        }
+        #big>div:nth-child(7){
+            grid-area: g;
+        }
+        #big>div:nth-child(8){
+            grid-area: h;
+        }
+        #big>div:nth-child(9){
+            grid-area: i;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="big">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
